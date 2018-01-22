@@ -1,0 +1,243 @@
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\ApplicationInsights.config
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Dentist.dll.config
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Dentist.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Dentist.pdb
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Antlr3.Runtime.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\EntityFramework.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Web.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Newtonsoft.Json.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Owin.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Helpers.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Mvc.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Optimization.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Razor.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\WebGrease.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Helpers.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Mvc.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Optimization.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.Razor.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Antlr3.Runtime.pdb
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Newtonsoft.Json.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\EntityFramework.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Web.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.csprojResolveAssemblyReference.cache
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.csproj.CoreCompileInputs.cache
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.pdb
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Common.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\WebActivatorEx.dll
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Common.xml
+C:\Users\m3n7alsnak3\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\obj\Debug\Dentist.csprojResolveAssemblyReference.cache
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\obj\Debug\Dentist.csproj.CoreCompileInputs.cache
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\obj\Debug\Dentist.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\obj\Debug\Dentist.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\ApplicationInsights.config
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.dll.config
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Antlr3.Runtime.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.Data.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\EntityFramework.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.Web.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Newtonsoft.Json.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.Web.Common.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Owin.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Helpers.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Mvc.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Optimization.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Razor.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\WebActivatorEx.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\WebGrease.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Dentist.Data.dll.config
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.Web.Common.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Helpers.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Mvc.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Optimization.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.Razor.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Antlr3.Runtime.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Newtonsoft.Json.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\EntityFramework.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist\bin\Microsoft.AI.Web.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\ApplicationInsights.config
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.dll.config
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Antlr3.Runtime.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.Data.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\EntityFramework.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Web.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Newtonsoft.Json.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Common.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Owin.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Helpers.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Mvc.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Optimization.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Razor.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\WebActivatorEx.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\WebGrease.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.Data.dll.config
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Common.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Ninject.Web.Mvc.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Helpers.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Mvc.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Optimization.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.Razor.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\System.Web.WebPages.Razor.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Antlr3.Runtime.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Newtonsoft.Json.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\EntityFramework.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\EntityFramework.SqlServer.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Microsoft.AI.Web.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.csprojResolveAssemblyReference.cache
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.csproj.CoreCompileInputs.cache
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\obj\Debug\Dentist.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.DataServices.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.DataServices.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist\bin\Dentist.DataServices.dll.config

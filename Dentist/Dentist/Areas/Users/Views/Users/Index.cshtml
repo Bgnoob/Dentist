@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EditUserViewModel>
+<h2>EditUser</h2>
+
+
+@foreach (var user in Model)
+{
+    <div>
+        @user.Username
+        <br>
+        @user.Firstname
+        <br>
+        @user.Lastname
+        <br>
+        @user.Years
+      
+    </div>
+
+}
+
+@using (Html.BeginForm("Index", "Users", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <label for="FirstnameInput">First name:</label>
+        <input type="text" id="FirstnameInput" name="Firstname" />
+
+      </div>
+
+    <div>
+        <label for="LastnameInput">Last name:</label>
+        <input type="text" id="LastnameInput" name="Lastname" />
+
+    </div>
+
+    <div>
+        <label for="YearsInput">Years:</label>
+        <input type="text" id="YearsInput" name="Years" />
+
+    </div>
+    <div>
+        <input type="submit" value="Save"/>
+
+    </div>
+
+}
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    }

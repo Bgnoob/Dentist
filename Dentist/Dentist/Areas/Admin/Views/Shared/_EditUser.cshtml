@@ -1,0 +1,25 @@
+﻿@model UserViewModel
+<h3>Edit User: </h3>
+@using (Html.BeginForm("EditUser", "Admin", FormMethod.Post))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m=> m.Id)
+    <div>
+        @Model.Username
+    </div>
+    <div>
+        @Html.LabelFor(m => m.IsAdmin)
+        @Html.EditorFor(m  => m.IsAdmin)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.IsDentist)
+        @Html.EditorFor(m => m.IsDentist)
+    </div>
+        <div>
+        <input type="submit" value="Save"/>
+        </div>
+
+
+}

@@ -1,0 +1,41 @@
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.dll.config
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csprojResolveAssemblyReference.cache
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csproj.CoreCompileInputs.cache
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.dll
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.Initial.resources
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csproj.GenerateResource.Cache
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.UserFirstandLastname.resources
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.DentistStudio.resources
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.Hours.resources
+C:\Users\Struppy\Desktop\New folder (3)\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.Rework.resources
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.dll.config
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csprojResolveAssemblyReference.cache
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.Initial.resources
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.UserFirstandLastname.resources
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csproj.GenerateResource.Cache
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.csproj.CoreCompileInputs.cache
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.dll
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.pdb
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.Reworkall.resources
+C:\Users\Struppy\Desktop\Project\Dentist\Dentist.Data\obj\Debug\Dentist.Data.Migrations.DentistStudioaddedpropertyTownandSpec.resources

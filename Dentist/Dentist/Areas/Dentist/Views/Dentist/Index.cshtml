@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DentistViewModel>
+<h2>Dentist Details </h2>
+
+
+@foreach (var user in Model)
+{
+    <div>
+      
+        <br>
+        @user.Name 
+        <br>
+        @user.Spec 
+        <br>
+        @user.Town
+        <br>
+        @user.Description
+     
+
+    </div>
+
+}
+@using (Html.BeginForm("Index", "Dentist", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <label for="NameInput">Studio Name:</label>
+        <input type="text" id="NameInput" name="Name" />
+
+    </div>
+
+    <div>
+        <label for="DescriptionInput">Description:</label>
+        <input type="text" id="DescriptionInput" name="Description" />
+
+    </div>
+
+    <div>
+        <label for="TownInput">Town:</label>
+        <input type="text" id="TownInput" name="Town" />
+
+    </div>
+
+    <div>
+        <label for="SpecInput">Specialization:</label>
+        <input type="text" id="SpecInput" name="Spec" />
+
+    </div>
+    
+    <div>
+        <input type="submit" value="Save" />
+
+    </div>
+
+}
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

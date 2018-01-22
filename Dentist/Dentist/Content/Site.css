@@ -1,0 +1,295 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.nav-menu {
+    padding-top: 48px;
+}
+
+header {
+    height: 122px;
+}
+
+    header nav ul li {
+        list-style: none;
+        display: inline-block;
+        color: white;
+        font-family: "Montserrat";
+        padding-right: 50px;
+    }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+
+        header nav ul li button {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 2px solid dodgerblue;
+            font-family: "Montserrat";
+            color: dodgerblue;
+            font-weight: 600;
+            background-color: transparent;
+        }
+
+.background {
+    background: url('images/dentalclinic.jpg');
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+    .background .articles {
+        width: 900px;
+        text-align: center;
+        margin-left: 300px;
+    }
+
+    .background article {
+        width: 264px;
+        height: 180px;
+        display: inline-block;
+        margin-top: 410px;
+    }
+
+.titles1 {
+    background-color: #7Ad0AB;
+    opacity: 0.8;
+}
+
+.titles2 {
+    background-color: #24B97A;
+    opacity: 0.8;
+}
+
+.titles3 {
+    background-color: #1F8359;
+    opacity: 0.8;
+}
+
+.articles article h1 {
+    font-family: "Montserrat";
+    color: white;
+    padding: 60px 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+    .articles article h1 span {
+        font-weight: 700;
+    }
+
+.articles article a {
+    text-decoration: none;
+}
+
+.book-now {
+    background-color: #9155A7;
+    height: 110px;
+    text-align: center;
+}
+
+    .book-now .text {
+        padding: 35px 0;
+    }
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+    .text button {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: #682768;
+        margin-left: 40px;
+    }
+
+        .text button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .text button:hover {
+            background-color: #775077;
+        }
+
+        .text button a:hover {
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+
+.book-now h1, .book-now button {
+    display: inline-block;
+}
+
+section.about-us {
+    height: 500px;
+    text-align: center;
+}
+
+    section.about-us h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+    }
+
+    section.about-us p {
+        padding: 0 90px;
+        font-size: 18px;
+        font-family: "Montserrat";
+    }
+
+.cabinet ul {
+    margin: 40px 0;
+}
+
+    .cabinet ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+section.about-us img {
+    width: 320px;
+    border: 2px solid #9155A7;
+}
+
+section.services {
+    height: 200px;
+}
+
+    section.services h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+        text-align: center;
+    }
+
+section.our-team {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+    section.our-team div.pictures {
+        height: 450px;
+        width: 100%;
+    }
+
+    section.our-team h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+    }
+
+
+    section.our-team div.pictures ul img {
+        width: 300px;
+        height: 300px;
+        margin: 0 60px;
+        box-shadow: 5px 5px 5px #b8bdc4;
+    }
+
+    section.our-team div.pictures ul li {
+        display: inline-block;
+    }
+
+        section.our-team div.pictures ul li h4 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 24px;
+            padding: 20px 0 4px 0;
+            color: #232426;
+        }
+
+        section.our-team div.pictures ul li span {
+            color: grey;
+            font-family: Lato;
+            font-size: 18px;
+        }
+
+section.contact-us {
+    height: 100px;
+}
+
+    section.contact-us h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+        text-align: center;
+    }
+
+    section.contact-us .info {
+        width: 600px;
+        margin-left: 350px;
+    }
+
+.info h5 {
+    font-family: "Montserrat";
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.info p {
+    font-family: "Lato";
+    font-size: 16px;
+    color: grey;
+}
+
+.address {
+    float:left;
+    text-align: center;
+}
+
+.hours {
+    float:right;
+    text-align: center;
+}
+
+.navbar navbar-inverse navbar-fixed-top {
+    color: blue;
+    background :blue;
+}
+.navbar-collapse collapse {
+    color: blue;
+  background: blue;
+}
