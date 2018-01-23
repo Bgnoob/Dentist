@@ -7,15 +7,13 @@
 @foreach (var user in Model)
 {
     <div>
-        <label>Cabinet Name: @user.Name </label>
-        <br>
+        <label>Name: @user.Name </label><br>
         <label>Dentist Specialization: @user.Spec </label><br>
         <label>Town: @user.Town </label><br>
-        <label>Studio Description: @user.Description </label><br>
+        <label>Description: @user.Description </label><br>
        
-      
-        <br>
-        <br>
+      <hr>
+
     </div>
 
 }

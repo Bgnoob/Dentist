@@ -3,25 +3,87 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
+Set padding to keep content from hitting the edges .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
+Set width on the form input elements since they're 100% wide by default input,
 select,
 textarea {
     max-width: 280px;
 }
+
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-toggle {
+        display: block !important;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar-brand {
+        background: url(~/Images/newlogo2_min.png);
+        background-repeat: no-repeat;
+        width: 99px !important;
+        height: 108px !important;
+    }
+}
+
+@media (min-width:401px) {
+    .navbar-brand {
+        background-image: url(~/Images/newlogo2.png);
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+Tabled Portrait @media screen and (max-width: 768px) {
+    #primary
+
+{
+    width: 100%;
+}
+
+#secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     float: left;
 }
@@ -35,7 +97,7 @@ nav {
 }
 
 header {
-    height: 122px;
+    /*height: 122px;*/
 }
 
     header nav ul li {
@@ -63,24 +125,38 @@ header {
         }
 
 .background {
-    background: url('images/dentalclinic.jpg');
+    background-image: url('~/Images/background.jpg');
     background-size: cover;
+    background-repeat: 100%;
     height: 600px;
     width: 100%;
 }
 
-    .background .articles {
-        width: 900px;
-        text-align: center;
-        margin-left: 300px;
-    }
+media screen and (max-width: 865px) {
+    #canvas
 
+{
+    /*background-image: none;*/
+}
+
+}
+
+.background .articles {
+    text-align: center;
+}
+
+.background article {
+    width: 264px;
+    height: 180px;
+    display: inline-block;
+    margin-top: 410px;
+}
+
+@media (max-width:785px) {
     .background article {
-        width: 264px;
-        height: 180px;
-        display: inline-block;
-        margin-top: 410px;
+        margin-top: 0px !important;
     }
+}
 
 .titles1 {
     background-color: #7Ad0AB;
@@ -203,6 +279,26 @@ section.services {
         text-align: center;
     }
 
+@media (min-width:922px) {
+    article.col-md-4 {
+        float: none !important;
+    }
+}
+
+.collapse.in.show {
+    display: block !important;
+}
+
+.collapsing.in {
+    display: block !important;
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .navbar-collapse.collapse {
+        display: none;
+    }
+}
+
 section.our-team {
     width: 100%;
     height: 450px;
@@ -248,7 +344,7 @@ section.our-team {
         }
 
 section.contact-us {
-    height: 100px;
+    height: 300px;
 }
 
     section.contact-us h1 {
@@ -260,7 +356,7 @@ section.contact-us {
     }
 
     section.contact-us .info {
-        width: 600px;
+        width: 700px;
         margin-left: 350px;
     }
 
@@ -269,6 +365,7 @@ section.contact-us {
     font-size: 24px;
     padding-bottom: 20px;
 }
+
 .info p {
     font-family: "Lato";
     font-size: 16px;
@@ -276,20 +373,15 @@ section.contact-us {
 }
 
 .address {
-    float:left;
+    float: left;
     text-align: center;
 }
 
 .hours {
-    float:right;
+    float: right;
     text-align: center;
 }
 
-.navbar navbar-inverse navbar-fixed-top {
-    color: blue;
-    background :blue;
-}
-.navbar-collapse collapse {
-    color: blue;
-  background: blue;
-}
+.form-group button {
+    color: #02B8BF;
+    font-size: 16px;

@@ -3,78 +3,82 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Dentist Appointment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="project.css">
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="    ">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Dentist Site", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, null)</li>
-                    @if (this.User.Identity.IsAuthenticated)
-                    {
-                        <li>@Html.ActionLink("Profile", "Index", "Users", new { area = "Users" }, null)</li>
-                    }
-                    @if (this.User.Identity.IsAuthenticated)
-                    {
-                        <li>@Html.ActionLink("AllDentist", "AllDentist", "Dentist", new { area = "Dentist" }, null)</li>
-                    }
-                    @if (this.User.IsInRole("Admin"))
-                    {
-                           <li>@Html.ActionLink("Admin", "AllUsers", "Admin", new { area = "Admin" }, null)</li>
-                    }
+    <header>
+        <nav class="navbar text-white" style="width:100%;">
+            <div class="container-fluid">
 
-                     @if (this.User.IsInRole("Dentist"))
-                     {
+                <div class="navbar-header" style="background-color:#fff">
+                    <button type="button" class="navbar-toggle" style="top:40px; right:20px;" data-toggle="collapse" data-target="#myNavbar">
+                        <span style="background-color:#4ddbe9;" class="icon-bar"></span>
+                        <span style="background-color:#00acef;" class="icon-bar"></span>
+                        <span style="background-color:#4ddbe9;" class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="height:118px; width:322px; padding:0px !important;" alt=""></div>
+                </div>
+                <div class="nav-menu collapse navbar-collapse" style="background-color:#fff" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+
+
+                        <li class="current">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+
+                        <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, null)</li>
+
+                        @*<li><a href="alldentists.html">All Dentists</a></li>
+                            <li><a href="appointment.html">Appointment</a></li>*@
+                        <li>@Html.ActionLink("Contact us", "Contact", "Home", new { area = "" }, null)</li>
+
+                        @if (this.User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Profile", "Index", "Users", new { area = "Users" }, null)</li>
+                        }
+                        @if (this.User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("AllDentist", "AllDentist", "Dentist", new { area = "Dentist" }, null)</li>
+                        }
+                        @if (this.User.IsInRole("Admin"))
+                        {
+                            <li>@Html.ActionLink("Admin", "AllUsers", "Admin", new { area = "Admin" }, null)</li>
+                        }
+
+                        @if (this.User.IsInRole("Dentist"))
+                        {
                             <li>@Html.ActionLink("Dentist", "Index", "Dentist", new { area = "Dentist" }, null)</li>
-                     }
-                   
+                        }
 
-                </ul>
-                @Html.Partial("_LoginPartial")
+
+                        @*<li><button><a href="login.html">Log In</a></button></li>
+                        <li><button><a href="register.html">Register</a></button></li>
+
+                        <li>@Html.ActionLink("Register", "Register", "Account", new { area = "" }, htmlAttributes: new { id = "registerLink" })</li>
+                        <li>@Html.ActionLink("Log in", "Login", "Account", new { area = "" }, htmlAttributes: new { id = "loginLink" })</li>*@
+                        @Html.Partial("_LoginPartial")
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <section id="contact" class="contact-us">
-                <div class="info">
-
-                    <div class="address">
-                        <h5>Our Address</h5>
-                        <p>500 Terry Francois Street</p>
-                        <p>New York, CA 94158</p>
-                        <p>dentalclinic@gmail.com \\ Tel: 123-456-7890</p>
-                    </div>
-
-                    <div class="hours">
-                        <h5>Opening Hours</h5>
-                        <p>Monday - Friday 9AM - 7PM</p>
-                        <p>Saturday 9AM - 2MP</p>
-                    </div>
-
-                </div>
-            </section>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </body>
 </html>
