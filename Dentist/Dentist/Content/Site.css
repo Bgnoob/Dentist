@@ -8,7 +8,6 @@ Set padding to keep content from hitting the edges .body-content {
     padding-right: 15px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
@@ -22,50 +21,61 @@ textarea {
     max-width: 280px;
 }
 
-
-
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 1251px) {
     .navbar-collapse.collapse {
-        display: none !important;
+        display: block!important;
+    }
+        .navbar-toggle {
+            display: none!important;
+        }
+
+        .navbar-header {
+            float: left;
+        }
     }
 
-    .navbar-toggle {
-        display: block !important;
+    @media (max-width: 1250px) {
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+        .navbar-toggle {
+            display: block !important;
+        }
+
+        .navbar-header {
+            float: none;
+        }
     }
 
-    .navbar-header {
-        float: none;
-    }
-}
-
-@media (max-width:400px) {
-    .navbar-brand {
-        background: url(~/Images/newlogo2_min.png);
-        background-repeat: no-repeat;
-        width: 99px !important;
-        height: 108px !important;
-    }
-}
-
-@media (min-width:401px) {
-    .navbar-brand {
-        background-image: url(~/Images/newlogo2.png);
-    }
-}
-
-@media screen and (max-width: 1060px) {
-    #primary {
-        width: 67%;
+    @media (max-width:400px) {
+        .navbar-brand {
+            background: url(../Images/newlogo2_min.png);
+            background-repeat: no-repeat;
+            width: 99px !important;
+            height: 108px !important;
+        }
     }
 
-    #secondary {
-        width: 30%;
-        margin-left: 3%;
+    @media (min-width:401px) {
+        .navbar-brand {
+            background-image: url(../Images/newlogo2.png);
+        }
     }
-}
 
-Tabled Portrait @media screen and (max-width: 768px) {
-    #primary
+    @media screen and (max-width: 1060px) {
+        #primary {
+            width: 67%;
+        }
+
+        #secondary {
+            width: 30%;
+            margin-left: 3%;
+        }
+    }
+
+    Tabled Portrait @media screen and (max-width: 768px) {
+        #primary
 
 {
     width: 100%;
@@ -88,10 +98,6 @@ Tabled Portrait @media screen and (max-width: 768px) {
     float: left;
 }
 
-nav {
-    float: right;
-}
-
 .nav-menu {
     padding-top: 48px;
 }
@@ -100,34 +106,36 @@ header {
     /*height: 122px;*/
 }
 
-    header nav ul li {
-        list-style: none;
-        display: inline-block;
-        color: white;
-        font-family: "Montserrat";
-        padding-right: 50px;
-    }
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-family: 'Montserrat';
+    font-size:18px;
+    padding-right: 50px;
+}
 
-        header nav ul li a {
+nav ul li a {
             text-decoration: none;
             color: dodgerblue;
-        }
+}
 
-        header nav ul li button {
-            width: 100px;
-            height: 40px;
-            border-radius: 20px;
-            border: 2px solid dodgerblue;
-            font-family: "Montserrat";
-            color: dodgerblue;
-            font-weight: 600;
-            background-color: transparent;
-        }
+    nav ul li button {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid dodgerblue;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        color: dodgerblue;
+        font-weight: 700;
+        background-color: transparent;
+    }
 
 .background {
-    background-image: url('~/Images/background.jpg');
+    background: url('../Images/dentalclinic.jpg');
     background-size: cover;
-    background-repeat: 100%;
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
 }
@@ -174,7 +182,7 @@ media screen and (max-width: 865px) {
 }
 
 .articles article h1 {
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 60px 40px;
     font-size: 24px;
@@ -191,7 +199,7 @@ media screen and (max-width: 865px) {
 
 .book-now {
     background-color: #9155A7;
-    height: 110px;
+    height: 130px;
     text-align: center;
 }
 
@@ -207,12 +215,11 @@ media screen and (max-width: 865px) {
 }
 
     .text button {
-        width: 200px;
-        height: 40px;
+        width: 300px;
+        height: 45px;
         border-radius: 10px;
         border: none;
         background-color: #682768;
-        margin-left: 40px;
     }
 
         .text button a {
@@ -241,7 +248,7 @@ section.about-us {
 }
 
     section.about-us h1 {
-        font-family: "Montserrat";
+        font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         margin: 60px 0;
         color: #02B8BF;
@@ -250,7 +257,7 @@ section.about-us {
     section.about-us p {
         padding: 0 90px;
         font-size: 18px;
-        font-family: "Montserrat";
+        font-family: 'Montserrat', sans-serif;
     }
 
 .cabinet ul {
@@ -272,7 +279,7 @@ section.services {
 }
 
     section.services h1 {
-        font-family: "Montserrat";
+        font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         margin: 60px 0;
         color: #02B8BF;
@@ -292,96 +299,200 @@ section.services {
 .collapsing.in {
     display: block !important;
 }
+        section.contact-us h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            margin: 60px 0;
+            color: #02B8BF;
+            text-align: center;
+        }
 
-@media (max-width: 1000px) and (min-width: 768px) {
-    .navbar-collapse.collapse {
-        display: none;
+    .info h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
     }
-}
 
-section.our-team {
+    .info p {
+        font-family: "Lato";
+        font-size: 16px;
+        color: grey;
+    }
+
+    .form-group button {
+        color: #02B8BF;
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+
+    nav ul li button {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid dodgerblue;
+        font-family: 'Montserrat', sans-serif;
+        color: dodgerblue;
+        font-weight: 600;
+        background-color: transparent;
+    }
+.month {
+    padding: 70px 25px;
     width: 100%;
-    height: 450px;
+    background: #1abc9c;
     text-align: center;
-    margin-bottom: 100px;
 }
 
-    section.our-team div.pictures {
-        height: 450px;
-        width: 100%;
+    .month ul {
+        margin: 0;
+        padding: 0;
     }
 
-    section.our-team h1 {
-        font-family: "Montserrat";
-        font-size: 50px;
-        margin: 60px 0;
-        color: #02B8BF;
+        .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+    .month > .prev {
+        float: left;
+        padding-top: 10px;
     }
 
-
-    section.our-team div.pictures ul img {
-        width: 300px;
-        height: 300px;
-        margin: 0 60px;
-        box-shadow: 5px 5px 5px #b8bdc4;
+    .month > .next {
+        float: right;
+        padding-top: 10px;
     }
 
-    section.our-team div.pictures ul li {
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+    .weekdays > li {
         display: inline-block;
-    }
-
-        section.our-team div.pictures ul li h4 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 24px;
-            padding: 20px 0 4px 0;
-            color: #232426;
-        }
-
-        section.our-team div.pictures ul li span {
-            color: grey;
-            font-family: Lato;
-            font-size: 18px;
-        }
-
-section.contact-us {
-    height: 300px;
-}
-
-    section.contact-us h1 {
-        font-family: "Montserrat";
-        font-size: 50px;
-        margin: 60px 0;
-        color: #02B8BF;
+        width: 13.6%;
+        color: #666;
         text-align: center;
     }
 
-    section.contact-us .info {
-        width: 700px;
-        margin-left: 350px;
-    }
-
-.info h5 {
-    font-family: "Montserrat";
-    font-size: 24px;
-    padding-bottom: 20px;
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
 }
 
-.info p {
+    .days > li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #777;
+    }
+
+        .days li .active {
+            padding: 5px;
+            background: #1abc9c;
+            color: white !important
+        }
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+        width: 12.5%;
+    }
+
+        .days li .active {
+            padding: 2px;
+        }
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+        width: 12.2%;
+    }
+}
+
+.today {
+    background: aqua;
+}
+
+th:nth-of-type(1) > a, td:nth-of-type(1) > a {
+    color: red;
+}
+a.nodeco
+{
+    text-decoration:none;
+    color:black;
+}
+
+.info > h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.info > p {
     font-family: "Lato";
     font-size: 16px;
     color: grey;
 }
 
-.address {
-    float: left;
-    text-align: center;
-}
-
-.hours {
-    float: right;
-    text-align: center;
-}
-
-.form-group button {
+.form-group > button {
     color: #02B8BF;
     font-size: 16px;
+}
+
+li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.dentists strong {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.informat li {
+    border-bottom: 1px solid #9155A7;
+    /*padding-top: 10px;*/
+}
+.input-group-btn.search-panel.show {
+    display: table-cell !important;
+}
+.nav li button a:hover {
+    text-decoration: none;
+}
+.readmore {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 120px;
+    padding: 5px;
+    background-color: #682768;
+    opacity: 0.7;
+    color: white;
+}
+    .readmore, readbtn {
+        color: white!important;
+        text-decoration: none;
+    }
+    .readmore a:hover {
+        color: #9155A7;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+.readbtn {
+    color: white;
+    text-decoration: none;
+}

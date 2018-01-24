@@ -4,17 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentist Appointment</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    @Scripts.Render("~/bundles/modernizr")
+    @*@Styles.Render("~/Content/css")*@
+    <link rel="stylesheet" href="~/Content/bootedstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="project.css">
-
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/Site.css" />
 
 </head>
-<body>
+<body style="padding-top:0px;">
     <header>
+
         <nav class="navbar text-white" style="width:100%;">
             <div class="container-fluid">
 
@@ -27,30 +28,21 @@
                     <div class="navbar-brand" style="height:118px; width:322px; padding:0px !important;" alt=""></div>
                 </div>
                 <div class="nav-menu collapse navbar-collapse" style="background-color:#fff" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-left">
-
-
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="current">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-
                         <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, null)</li>
-
                         @*<li><a href="alldentists.html">All Dentists</a></li>
                             <li><a href="appointment.html">Appointment</a></li>*@
+                        <li>@Html.ActionLink("All Dentists", "AllDentist", "Dentist", new { area = "Dentist" }, null)</li>
                         <li>@Html.ActionLink("Contact us", "Contact", "Home", new { area = "" }, null)</li>
-
                         @if (this.User.Identity.IsAuthenticated)
                         {
                             <li>@Html.ActionLink("Profile", "Index", "Users", new { area = "Users" }, null)</li>
-                        }
-                        @if (this.User.Identity.IsAuthenticated)
-                        {
-                            <li>@Html.ActionLink("AllDentist", "AllDentist", "Dentist", new { area = "Dentist" }, null)</li>
                         }
                         @if (this.User.IsInRole("Admin"))
                         {
                             <li>@Html.ActionLink("Admin", "AllUsers", "Admin", new { area = "Admin" }, null)</li>
                         }
-
                         @if (this.User.IsInRole("Dentist"))
                         {
                             <li>@Html.ActionLink("Dentist", "Index", "Dentist", new { area = "Dentist" }, null)</li>
@@ -58,27 +50,26 @@
 
 
                         @*<li><button><a href="login.html">Log In</a></button></li>
-                        <li><button><a href="register.html">Register</a></button></li>
+                            <li><button><a href="register.html">Register</a></button></li>
 
-                        <li>@Html.ActionLink("Register", "Register", "Account", new { area = "" }, htmlAttributes: new { id = "registerLink" })</li>
-                        <li>@Html.ActionLink("Log in", "Login", "Account", new { area = "" }, htmlAttributes: new { id = "loginLink" })</li>*@
+                            <li>@Html.ActionLink("Register", "Register", "Account", new { area = "" }, htmlAttributes: new { id = "registerLink" })</li>
+                            <li>@Html.ActionLink("Log in", "Login", "Account", new { area = "" }, htmlAttributes: new { id = "loginLink" })</li>*@
                         @Html.Partial("_LoginPartial")
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
         <hr />
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 </body>
 </html>

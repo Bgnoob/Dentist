@@ -12,5 +12,6 @@ namespace Dentist.DataServices
         IEnumerable<ApplicationUser> GetInformationAboutUser(string username);
 
         void UpdateUser(string userId, string firstName, string lastName, int years);
+        IEnumerable<Hours> GetMyHours(string id);
     }
 }

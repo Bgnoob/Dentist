@@ -1,5 +1,6 @@
 ﻿using Dentist.Data;
 using Dentist.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -52,6 +53,42 @@ namespace Dentist.DataServices
                 dentistStudio.Spec = spec;
             }
             this.dbContext.SaveChanges();
+        }
+
+        public IEnumerable<Hours> GetMyHours(string id)
+        {
+           
+            return  this.dbContext.Hours.Where(b => b.DentistId == id).ToList();
+
+        }
+
+        public bool CheckFreeHour(DateTime hour, string name)
+        {
+            var dentistId = this.dbContext.DentistStudio.Where(u => u.Name == name).Select(b => b.Id).FirstOrDefault();
+            var free = this.dbContext.Hours.Where(h => h.Hour == hour && h.DentistId == dentistId).Any();
+            if (!free)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
+        public void SaveHour(DateTime hour, string dentistName, string userID)
+        {
+            var dentistId = this.dbContext.DentistStudio.Where(u => u.Name == dentistName).Select(b => b.Id).FirstOrDefault();
+
+            this.dbContext.Hours.Add(new Hours
+            {
+                Hour = hour,
+                DentistId = dentistId,
+                PatientId = userID
+            });
+            this.dbContext.SaveChanges();
+
         }
     }
 }

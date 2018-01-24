@@ -1,19 +1,76 @@
-﻿    @model IEnumerable<DentistViewModel>
-    @{
+﻿@model IEnumerable<DentistViewModel>
+@{
     ViewBag.Title = "AllDentist";
 }
 
-<h2>AllDentist</h2>
-@foreach (var user in Model)
-{
-    <div>
-        <label>Name: @user.Name </label><br>
-        <label>Dentist Specialization: @user.Spec </label><br>
-        <label>Town: @user.Town </label><br>
-        <label>Description: @user.Description </label><br>
-       
-      <hr>
-
+<a href="@Url.Action("ReserveHour", "Dentist")"><p>Reserve Hour</p></a>
+<div class="container">
+    <div class="text-center"><h1>Here you can see our specialists.</h1></div>
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Filter by</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#name">Name</a></li>
+                        <li><a href="#spec">Specialization</a></li>
+                        <li><a href="#town">Town</a></li>
+                        <li><a href="#rating">Rating</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#all">Anything</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">
+                <input type="text" class="form-control" name="x" placeholder="Type here...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
     </div>
+</div>
 
-}
+<script>
+    $(document).ready(function (e) {
+        $('.search-panel .dropdown-menu').find('a').click(function (e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#", "");
+            var concept = $(this).text();
+            $('.search-panel span#search_concept').text(concept);
+            $('.input-group #search_param').val(param);
+        });
+    });
+</script>
+<div class="media col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+    <ul class="dentists">
+        @{ 
+            var i = 1;
+        }
+        @foreach (var user in Model)
+        {
+            string src = "";
+            src = (i == 1) ? "/Images/dentist" + i.ToString() + ".png" : "/Images/dentist" + i.ToString() + ".jpg";
+            <li>
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="@src" width="210" height="220" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <ul class="informat">
+                        <li class="name">Name: <strong>@user.Name</strong></li>
+                        <li class="spec">Specialization: <strong>@user.Spec</strong></li>
+                        <li class="town">Town: <strong>@user.Town</strong></li>
+                        <li class="rating">Rating:<strong></strong></li>
+                        <li class="desc">Description:<strong>@user.Description </strong></li>
+                    </ul>
+                    <button class="readmore col-lg-3 col-lg-offset-9"><a class="readbtn" href="#">Read More &gt;</a></button>
+                </div>
+            </li>
+            <hr>
+            i++;
+        }
+    </ul>
+</div>

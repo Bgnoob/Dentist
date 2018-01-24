@@ -13,5 +13,8 @@ namespace Dentist.DataServices
         IEnumerable<DentistStudio> getDentistInformation(string name);
         void updateDentist(string username, string name, string description, string town, string spec);
         IEnumerable<DentistStudio> AllDentist();
+        bool CheckFreeHour(DateTime hour, string name);
+        void SaveHour(DateTime hour, string dentistName, string userID);
+        IEnumerable<Hours> GetMyHours(string id);
     }
 }

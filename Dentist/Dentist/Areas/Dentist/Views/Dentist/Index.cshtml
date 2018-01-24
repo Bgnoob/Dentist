@@ -1,6 +1,9 @@
 ﻿@model IEnumerable<DentistViewModel>
 <h2>Dentist Details </h2>
 
+<a href="@Url.Action("DentistHours", "Dentist")"><p>Dentist Hours</p></a>
+
+
 
 @foreach (var user in Model)
 {
@@ -19,15 +22,13 @@
 {
     @Html.AntiForgeryToken()
     <div>
-        <label for="NameInput">Studio Name:</label>
+        <label for="NameInput">Name:</label>
         <input type="text" id="NameInput" name="Name" />
 
     </div>
-
     <div>
-        <label for="DescriptionInput">Description:</label>
-        <input type="text" id="DescriptionInput" name="Description" />
-
+        <label for="SpecInput">Specialization:</label>
+        <input type="text" id="SpecInput" name="Spec" />
     </div>
 
     <div>
@@ -37,11 +38,12 @@
     </div>
 
     <div>
-        <label for="SpecInput">Specialization:</label>
-        <input type="text" id="SpecInput" name="Spec" />
-
+        <label for="DescriptionInput">Description:</label>
+        <input type="text" id="DescriptionInput" name="Description" />
     </div>
-    
+
+
+
     <div>
         <input type="submit" value="Save" />
 

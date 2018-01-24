@@ -39,7 +39,11 @@ namespace Dentist.DataServices
             user.LastName = lastName;
             user.Years = years;
             this.dbContext.SaveChanges();
+        }
+        public IEnumerable<Hours> GetMyHours(string id)
+        {
 
+            return this.dbContext.Hours.Where(b => b.PatientId == id).ToList();
 
         }
     }

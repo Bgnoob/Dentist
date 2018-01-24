@@ -38,6 +38,20 @@ namespace Dentist.Areas.Users.Controllers
 
             return this.View(viewModel);
         }
+
+        public ActionResult MyHours()
+        {
+            var username = this.User.Identity.Name;
+            var user = this.dbContext.Users.FirstOrDefault(x => x.UserName == username);
+            var viewmodel = this.usersService.GetMyHours(user.Id).Select(b => new Hours
+            {
+                Hour = b.Hour,
+                DentistName = b.DentistId,
+                UserID = b.PatientId
+            });
+
+            return this.View(viewmodel);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Index(EditUserViewModel viewModel)
