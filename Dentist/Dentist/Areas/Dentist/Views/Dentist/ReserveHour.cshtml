@@ -1,0 +1,23 @@
+﻿@model ReserveHourModel
+
+
+@using (Html.BeginForm("ReserveHour", "Dentist", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label class="label-input" for="UsernameInputField"> Username: </label>
+        @Html.TextBoxFor(model => model.DentistName, new { id = "DentistNameInputField" })
+        @Html.ValidationMessageFor(m => m.DentistName, null, new { @class = "text-danger" })
+    </div>
+    <div>
+        <label >{0:dd/MM/yyyy HH:mm}</label><br>
+
+        <label class="label-input" for="CourseNameInputField"> Course Name: </label>
+        @Html.TextBoxFor(model => model.Hour, new { id = "HourInputField" })
+        @Html.ValidationMessageFor(m => m.Hour, null, new { @class = "text-danger" })
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+}

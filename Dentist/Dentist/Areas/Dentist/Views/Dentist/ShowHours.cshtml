@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowHours</title>
+    <link rel="stylesheet" href="~/Content/bootedstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <div class="container"> 
+        @{ 
+            var half = 30;
+            DateTime inc = new DateTime(2018, ViewBag.month, ViewBag.date, 8, 0, 0);
+        }
+        <h3>@inc.ToString("MMMM") 
+        @if (ViewBag.date == 1 || ViewBag.date - 20 == 1 || ViewBag.date - 30 == 1)
+        {
+            <span>@ViewBag.date&shy;st</span>
+        }
+        else if (ViewBag.date == 2 || ViewBag.date-20==2)
+        {
+            <span>@ViewBag.date&shy;;nd</span>
+        }
+        else if ( ViewBag.date == 3 || ViewBag.date-20==3)
+            {
+            <span>@ViewBag.date&shy;;rd</span>
+        }
+        else
+        {
+            <span>@ViewBag.date&shy;th</span>
+        }
+        </h3>
+        @for (int i = 0;i<4;i++)
+        {
+            <div class="row">
+                @for (int j=0;j<6;j++)
+                        {
+                    <div class="col-md-2">@inc.ToString("HH:mm")</div>
+                    inc = inc.AddMinutes(half);
+                }
+            </div>
+
+                    
+
+
+        }
+    </div>
+</body>
+</html>

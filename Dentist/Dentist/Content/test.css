@@ -1,0 +1,347 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-toggle {
+        display: block !important;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar-brand {
+        background-image: url(../images/newlogo2_min.png);
+        background-repeat: no-repeat;
+        width: 99px !important;
+        height: 108px !important;
+    }
+}
+
+@media (min-width:401px) {
+    .navbar-brand {
+        background-image: url(../images/newlogo2.png);
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.nav-menu {
+    padding-top: 48px;
+}
+
+header {
+    height: 122px;
+}
+
+    header nav ul li {
+        list-style: none;
+        display: inline-block;
+        color: white;
+        font-family: "Montserrat";
+        padding-right: 50px;
+    }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+
+        header nav ul li button {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            border: 2px solid dodgerblue;
+            font-family: "Montserrat";
+            color: dodgerblue;
+            font-weight: 600;
+            background-color: transparent;
+        }
+
+.background {
+    background: url('../images/dentalclinic.jpg');
+    background-size: cover;
+    background-repeat: 100%;
+    height: 600px;
+    width: 100%;
+}
+
+media screen and (max-width: 865px) {
+    #canvas
+
+{
+    background-image: none;
+}
+
+}
+
+.background .articles {
+    text-align: center;
+}
+
+.background article {
+    width: 264px;
+    height: 180px;
+    display: inline-block;
+    margin-top: 410px;
+}
+
+@media (max-width:785px) {
+    .background article {
+        margin-top: 0px !important;
+    }
+}
+
+.titles1 {
+    background-color: #7Ad0AB;
+    opacity: 0.8;
+}
+
+.titles2 {
+    background-color: #24B97A;
+    opacity: 0.8;
+}
+
+.titles3 {
+    background-color: #1F8359;
+    opacity: 0.8;
+}
+
+.articles article h1 {
+    font-family: "Montserrat";
+    color: white;
+    padding: 60px 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+    .articles article h1 span {
+        font-weight: 700;
+    }
+
+.articles article a {
+    text-decoration: none;
+}
+
+.book-now {
+    background-color: #9155A7;
+    height: 130px;
+    text-align: center;
+}
+
+    .book-now .text {
+        padding: 35px 0;
+    }
+
+.text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+    .text button {
+        width: 300px;
+        height: 45px;
+        border-radius: 10px;
+        border: none;
+        background-color: #682768;
+    }
+
+        .text button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .text button:hover {
+            background-color: #775077;
+        }
+
+        .text button a:hover {
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+
+.book-now h1, .book-now button {
+    display: inline-block;
+}
+
+section.about-us {
+    height: 500px;
+    text-align: center;
+}
+
+    section.about-us h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+    }
+
+    section.about-us p {
+        padding: 0 90px;
+        font-size: 18px;
+        font-family: "Montserrat";
+    }
+
+.cabinet ul {
+    margin: 40px 0;
+}
+
+    .cabinet ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+section.about-us img {
+    width: 320px;
+    border: 2px solid #9155A7;
+}
+
+section.services {
+    height: 200px;
+}
+
+    section.services h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+        text-align: center;
+    }
+
+@media (min-width:922px) {
+    article.col-md-4 {
+        float: none !important;
+    }
+}
+
+.collapse.in.show {
+    display: block !important;
+}
+
+.collapsing.in {
+    display: block !important;
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .navbar-collapse.collapse {
+        display: none;
+    }
+}
+
+section.our-team {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+    section.our-team div.pictures {
+        height: 450px;
+        width: 100%;
+    }
+
+    section.our-team h1 {
+        font-family: "Montserrat";
+        font-size: 50px;
+        margin: 60px 0;
+        color: #02B8BF;
+    }
+
+
+    section.our-team div.pictures ul img {
+        width: 300px;
+        height: 300px;
+        margin: 0 60px;
+        box-shadow: 5px 5px 5px #b8bdc4;
+    }
+
+    section.our-team div.pictures ul li {
+        display: inline-block;
+    }
+
+        section.our-team div.pictures ul li h4 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 24px;
+            padding: 20px 0 4px 0;
+            color: #232426;
+        }
+
+        section.our-team div.pictures ul li span {
+            color: grey;
+            font-family: Lato;
+            font-size: 18px;
+        }
+
+
+
+section.contact-us h1 {
+    font-family: "Montserrat";
+    font-size: 50px;
+    margin: 60px 0;
+    color: #02B8BF;
+    text-align: center;
+}
+
+
+.info h5 {
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.info p {
+    font-family: "Lato";
+    font-size: 16px;
+    color: grey;
+}
+
+.form-group button {
+    color: #02B8BF;
+    font-size: 16px;
+}

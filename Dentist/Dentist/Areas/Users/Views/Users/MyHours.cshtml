@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Hours>
+
+
+@foreach (var user in Model)
+{
+    <div>
+        
+        @user.Hour
+        <br>
+        @user.UserID
+        <br>
+        @user.DentistName
+      
+    <hr>
+    </div>
+}

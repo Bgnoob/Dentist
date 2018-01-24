@@ -1,0 +1,107 @@
+﻿
+@{
+    Layout = null;
+}
+@{
+    string[] cal_days_labels = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+    string[] cal_months_labels = {"January", "February", "March", "April",
+                     "May", "June", "July", "August", "September",
+                     "October", "November", "December"};
+
+    int[] cal_days_in_month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    var cal_current_date = DateTime.Now;
+    int firstDay = (int)new DateTime(cal_current_date.Year, ViewBag.month, 1).DayOfWeek;
+    var monthLength = cal_days_in_month[ViewBag.month - 1];
+    if (ViewBag.month == 2)
+    { // February only!
+        if ((cal_current_date.Year % 4 == 0 && cal_current_date.Year % 100 != 0) || cal_current_date.Year % 400 == 0)
+        {
+            monthLength = 29;
+        }
+    }
+    string monthName = cal_months_labels[ViewBag.month - 1];
+    var day = 0;
+    string daystr = "";
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowHours</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/calendar")
+    <link rel="stylesheet" href="~/Content/bootedstrap.css">
+</head>
+<body>
+    <div>
+        <br />
+        <p>@cal_current_date.DayOfWeek</p>
+    </div>
+    <div class="container">
+        Actual calendar
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="calendar-header">
+                    @for (var i = 0; i <= 6; i++)
+                    {
+                        <th class="calendar-header-day">
+                            @cal_days_labels[i]
+                        </th>
+                    }
+                </tr>
+                @for (var i = 0; i < 9; i++)
+                {
+                    if (day >= monthLength)
+                    {
+                        break;
+                    }
+
+                    <tr>
+                        @for (var j = 0; j <= 6; j++)
+                        {
+                            if (!(i == 0 && j < firstDay))
+                            {
+                                day++;
+                            };
+
+                            if (day == (int)cal_current_date.Day && ViewBag.month == cal_current_date.Month)
+                            {
+                                <td class="calendar-day today" id="@day">
+                                    @if (day <= monthLength && (i > 0 || j >= firstDay))
+                                    {
+                                        @Html.ActionLink(day.ToString(), "ShowHours", "Dentist", new {area = "Dentist", m = 6}, new { @class = "nodeco" })
+                                    }
+                                </td>
+
+                            }
+                            else if (day > monthLength)
+                            {
+                                <td class="calendar-day"></td>
+                            }
+                            else if (day == 0)
+                            {
+                                <td class="calendar-day"></td>
+                            }
+                            else
+                            {
+                                <td class="calendar-day" id="@day">
+                                    @if (day <= monthLength && (i > 0 || j >= firstDay))
+                                    {
+                                        @Html.ActionLink(day.ToString(), "ShowHours", "Dentist", new {area = "Dentist", m = 6}, new { @class = "nodeco" })
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+
+
+                }
+
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

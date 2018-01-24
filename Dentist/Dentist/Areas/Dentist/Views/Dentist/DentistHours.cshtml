@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ReserveHourModel>
+
+
+@foreach (var user in Model)
+{
+    <div>
+     @user.DentistName
+     @user.Hour
+     @user.UserID
+    </div>
+}
