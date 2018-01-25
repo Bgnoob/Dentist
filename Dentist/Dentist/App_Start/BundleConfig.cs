@@ -29,7 +29,7 @@ namespace Dentist
                       // "~/Content/bootstrap.css",
                       //"~/Content/test.css",
                       "~/Content/Site.css"));
-
+            bundles.Add(new StyleBundle("~/Content/bootedstrap").Include("~/Content/bootedstrap.css", new CssRewriteUrlTransform()));
         }
     }
 }

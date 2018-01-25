@@ -49,7 +49,7 @@ namespace Dentist.DataServices
 
         public IEnumerable<Hours> History(string id)
         {
-            return this.dbContext.Hours.Where(b => b.PatientId == id && DateTime.Compare(DateTime.Now,b.Hour)>0).ToList();
+            return this.dbContext.Hours.Where(b => b.PatientId == id && DateTime.Compare(DateTime.Now, b.Hour) > 0).ToList();
 
         }
     }

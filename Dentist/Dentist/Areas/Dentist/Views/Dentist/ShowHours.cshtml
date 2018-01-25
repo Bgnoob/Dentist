@@ -1,10 +1,26 @@
-﻿
+﻿@model IEnumerable<ReserveHourModel>
 @{
     Layout = null;
 }
-
+@{ 
+    bool[] tukaima = new bool[24];
+    var half = 30;
+    DateTime inc = new DateTime(2018, ViewBag.month, ViewBag.date, 8, 0, 0);
+    for (var i = 0; i < tukaima.Length; i++)
+    {
+        tukaima[i] = false;
+        foreach (var imali in Model)
+        {
+            if (inc.CompareTo(imali.Hour) == 0)
+            {
+                tukaima[i] = true;
+            }
+        }
+        inc = inc.AddMinutes(half);
+    }
+    inc = new DateTime(2018, 12, ViewBag.date, 8, 0, 0);
+}
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -15,43 +31,69 @@
     <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
 <body>
-    <div class="container"> 
-        @{ 
-            var half = 30;
-            DateTime inc = new DateTime(2018, ViewBag.month, ViewBag.date, 8, 0, 0);
-        }
-        <h3>@inc.ToString("MMMM") 
+    <div class="container">
+        <h3>
+            @inc.ToString("MMMM")
         @if (ViewBag.date == 1 || ViewBag.date - 20 == 1 || ViewBag.date - 30 == 1)
         {
             <span>@ViewBag.date&shy;st</span>
         }
-        else if (ViewBag.date == 2 || ViewBag.date-20==2)
+        else if (ViewBag.date == 2 || ViewBag.date - 20 == 2)
         {
             <span>@ViewBag.date&shy;;nd</span>
         }
-        else if ( ViewBag.date == 3 || ViewBag.date-20==3)
-            {
+        else if (ViewBag.date == 3 || ViewBag.date - 20 == 3)
+        {
             <span>@ViewBag.date&shy;;rd</span>
         }
         else
         {
             <span>@ViewBag.date&shy;th</span>
         }
-        </h3>
-        @for (int i = 0;i<4;i++)
+    </h3>
+        @if (ViewBag.isOwner)
         {
+            for (int i = 0; i < 4; i++)
+            {
             <div class="row">
-                @for (int j=0;j<6;j++)
+                @for (int j = 0; j < 6; j++)
+                {
+                    <div class="col-md-2">@inc.ToString("HH:mm")
+                        @if (tukaima[(i*6)+j])
                         {
-                    <div class="col-md-2">@inc.ToString("HH:mm")</div>
+                            foreach(var imali in Model)
+                            {
+                                if (inc.CompareTo(imali.Hour) == 0)
+                                {
+                                    <br />
+                                    @imali.UserID
+                                }
+                            }
+                        }
+                    </div>
                     inc = inc.AddMinutes(half);
                 }
             </div>
-
-                    
-
-
+            }
+        } else
+        {
+             for (int i = 0; i < 4; i++)
+                {
+                <div class="row">
+                    @for (int j = 0; j < 6; j++)
+                    {
+                        if (tukaima[(i * 6) + j])
+                        {
+                            <div class="col-md-2">@inc.ToString("HH:mm") Booked</div>
+                        } else
+                        {
+                            <div onclick="showForm(@ViewBag.month, @ViewBag.date, @inc.Hour, @inc.Minute)" class="col-md-2">@inc.ToString("HH:mm") FREE </div>
+                        }
+                        inc = inc.AddMinutes(half);
+                    } 
+                </div>
+                }
         }
-    </div>
+</div>
 </body>
 </html>

@@ -1,56 +1,67 @@
 ﻿@model IEnumerable<DentistViewModel>
-<h2>Dentist Details </h2>
-
 <a href="@Url.Action("DentistHours", "Dentist")"><p>Dentist Hours</p></a>
-
-
 
 @foreach (var user in Model)
 {
-    <div>
-      
-        <label>Name: @user.Name </label><br>
-        <label>Dentist Specialization: @user.Spec </label><br>
-        <label>Town: @user.Town </label><br>
-        <label>Description: @user.Description </label><br>
-     
+    <div class="media-body col-lg-4 col-lg-offset-2">
+        <h1 class="profileD">Dentist Profile</h1>
 
+        <ul class="profile ">
+            <li class="name">Name: <strong>@user.Name</strong></li>
+            <li class="spec">Specialization: <strong>@user.Spec</strong></li>
+            <li class="town">Town: <strong>@user.Town</strong></li>
+            <li class="rating">Rating: <strong></strong></li>
+            <li class="desript">Description: <strong>@user.Description</strong></li>
+        </ul>
+        <button id="editbutton" onclick="showForm()" class="editD"><a class="editDbtn">Edit Profile</a></button>
     </div>
-
 }
-@using (Html.BeginForm("Index", "Dentist", FormMethod.Post))
+@using (Html.BeginForm("Index", "Dentist", FormMethod.Post, new { @id="hidden-editform", @class = "form-horizontal col-lg-4 col-lg-offset-2", @style = "display:none" }))
 {
     @Html.AntiForgeryToken()
-    <div>
-        <label for="NameInput">Name:</label>
-        <input type="text" id="NameInput" name="Name" />
+    <h1 class="profileD">Edit Profile</h1>
 
+    <div class="form-group">
+        <label for="NameInput" class="col-sm-2 col-lg-3 control-label">Name</label>
+        <div class="col-sm-4 col-lg-6">
+            <input type="text" class="form-control" id="NameInput nameD" name="Name" placeholder="Doctor's name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="SpecInput" class="col-sm-2 col-lg-3  control-label">Specialization</label>
+        <div class="col-sm-4 col-lg-6">
+            <input type="text" class="form-control" id="specialization SpecInput" name="Spec" placeholder="Specialization">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="TownInput" class="col-sm-2 col-lg-3  control-label">Town</label>
+        <div class="col-sm-4 col-lg-6">
+            <input type="text" class="form-control" id="TownInput town" name="Town" placeholder="Town">
+        </div>
+    </div>
+    <!--
+    <div class="form-group">
+        <label class="col-sm-2 col-lg-3 control-label">Rating</label>
+        <div class="col-sm-3 col-lg-5">
+            <input type="text" class="form-control" id="rating" placeholder="Rating">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label for="DescriptionInput" class="col-sm-2 col-lg-3  control-label">Description</label>
+        <div class="col-sm-4 col-lg-6">
+            <textarea class="form-control" id="DescriptionInput" name="Description" rows="3"></textarea>
+        </div>
     </div>
     <div>
-        <label for="SpecInput">Specialization:</label>
-        <input type="text" id="SpecInput" name="Spec" />
+        <input type="submit" class="btn btn-info" value="Save Changes">
     </div>
-
-    <div>
-        <label for="TownInput">Town:</label>
-        <input type="text" id="TownInput" name="Town" />
-
-    </div>
-
-    <div>
-        <label for="DescriptionInput">Description:</label>
-        <input type="text" id="DescriptionInput" name="Description" />
-    </div>
-
-
-
-    <div>
-        <input type="submit" value="Save" />
-
-    </div>
-
+<script>
+    function showForm() {
+        document.getElementById("editbutton").style.display = "none";
+        document.getElementById("hidden-editform").style.display = "block";
+    }
+</script>
 }
 @section scripts{
     @Scripts.Render("~/bundles/jqueryval")
-
 }

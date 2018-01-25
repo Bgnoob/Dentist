@@ -208,7 +208,6 @@
     <Compile Include="Areas\Dentist\Controllers\DentistController.cs" />
     <Compile Include="Areas\Dentist\DentistAreaRegistration.cs" />
     <Compile Include="Areas\Dentist\Models\DentistViewModel.cs" />
-    <Compile Include="Areas\Dentist\Models\EmailModel.cs" />
     <Compile Include="Areas\Dentist\Models\ReserveHourModel.cs" />
     <Compile Include="Areas\Users\Controllers\UsersController.cs" />
     <Compile Include="Areas\Users\Models\EditUserViewModel.cs" />
@@ -272,6 +271,7 @@
     <Content Include="Areas\Dentist\Views\Dentist\ReserveHour.cshtml" />
     <Content Include="Areas\Dentist\Views\Dentist\DentistHours.cshtml" />
     <Content Include="Areas\Users\Views\Users\MyHours.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Areas\Users\Views\Users\History.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

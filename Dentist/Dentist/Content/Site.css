@@ -432,7 +432,7 @@ section.services {
 th:nth-of-type(1) > a, td:nth-of-type(1) > a {
     color: red;
 }
-a.nodeco
+a.nodeco, a.nodeco:hover
 {
     text-decoration:none;
     color:black;
@@ -496,3 +496,128 @@ li {
     color: white;
     text-decoration: none;
 }
+.profile li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+button.edit {
+    width: 100px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: lightseagreen;
+    color: white;
+}
+
+    button.edit a, button.save a {
+        text-decoration: none;
+        color: white;
+    }
+
+        button.edit a:hover, button.save a:hover {
+            background-color: lightseagreen;
+            opacity: 0.7;
+        }
+
+.form-horizontal {
+    margin-top: 80px;
+}
+
+button.save {
+    width: 130px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: lightseagreen;
+    color: white;
+}
+
+h1.profile {
+    border-bottom: 2px solid lightseagreen;
+}
+
+.promotions .box {
+    margin-top: 50px;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.prom1 {
+    background-color: #D12525;
+    opacity: 0.7;
+}
+
+.prom2 {
+    background-color: #4842f4;
+    opacity: 0.7;
+}
+
+    .prom2 strong {
+        color: #0c2030;
+    }
+
+.prom3 {
+    background-color: #225e2e;
+    opacity: 0.7;
+}
+
+.box:hover {
+    opacity: 0.5;
+}
+
+.box:hover {
+    opacity: 0.5;
+}
+
+h1.profileD {
+    border-bottom: 2px solid #9155A7;
+}
+
+button.saveD, button.editD {
+    width: 130px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #9155A7;
+    color: white;
+}
+
+button.editD {
+    width: 100px;
+}
+button.saveD a, button.editD a {
+    text-decoration: none;
+    color: white;
+}
+button.saveD a:hover, button.editD a:hover {
+    color: navajowhite;
+    opacity: 0.7;
+}
+.edit.seagreenthing {
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+}
+.edit.seagreenthing:hover {
+    background-color: seagreen;
+    border: none;
+    color: white;
+}
+.edit.seagreenthing.active {
+    background-color: seagreen;
+    border: none;
+    color: white;
+}
+

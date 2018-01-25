@@ -1,50 +1,96 @@
 ﻿@model IEnumerable<EditUserViewModel>
-<h2>EditUser</h2>
-
 
 @foreach (var user in Model)
 {
-    <div>
-        @user.Username
-        <br>
-        @user.Firstname
-        <br>
-        @user.Lastname
-        <br>
-        @user.Years
-      
-    </div>
+<div class="media-body col-lg-4 col-lg-offset-2">
+    <h1 class="profile">Profile</h1>
+
+    <ul class="profile">
+        <li class="name">Email: <strong>@user.Username</strong></li>
+        <li class="spec">First Name: <strong>@user.Firstname</strong></li>
+        <li class="town">Last Name: <strong>@user.Lastname</strong></li>
+        <li class="rating">Years: <strong>@user.Years</strong></li>
+    </ul>
+    <button id="editbutton" onclick="showthing(this)" class="edit"><a class="editbtn">Edit Profile</a></button>
+    <button id="ambularbutton" onclick="showthing(this)" type="button" style="width:auto;" class="edit seagreenthing">Ambulatory Sheet</button>
+    <table id="ambula" style="display:none;" class="table text-center">
+        <tr>
+            <th class="info text-center col-md-3">Тreatment</th>
+            <th class="success text-center col-md-3">Denist/Specialist</th>
+            <th class="danger text-center col-md-3">Date/Time</th>
+        </tr>
+        <tr>
+            <td>Teeth Whitening</td>
+            <td>Johnny B</td>
+            <td>12.01/13:30</td>
+        </tr>
+        <tr class="active">
+            <td>Bonding</td>
+            <td>Fergie</td>
+            <td>13.05/14:00</td>
+        </tr>
+        <tr>
+            <td>Braces</td>
+            <td>Wiz Khalifa</td>
+            <td>26.10/9:00</td>
+        </tr>
+        <tr class="active">
+            <td>Crowns and Caps</td>
+            <td>Obama</td>
+            <td>15.12/10:30</td>
+        </tr>
+    </table>
+</div>
 
 }
-<a href="@Url.Action("MyHours", "Users")"><p>My next hours</p></a>
-<a href="@Url.Action("History", "Users")"><p>Hystory of my teeths</p></a>
-@using (Html.BeginForm("Index", "Users", FormMethod.Post))
+@using (Html.BeginForm("Index", "Users", FormMethod.Post, new { @id = "hidden-editform", @class = "form-horizontal col-lg-4 col-lg-offset-2", @style = "display:none" }))
 {
     @Html.AntiForgeryToken()
-    <div>
-        <label for="FirstnameInput">First name:</label>
-        <input type="text" id="FirstnameInput" name="Firstname" />
-
-      </div>
-
-    <div>
-        <label for="LastnameInput">Last name:</label>
-        <input type="text" id="LastnameInput" name="Lastname" />
-
+    <h1 class="profile">Edit Profile</h1>
+    <div class="form-group">
+        <label for="FirstnameInput" class="col-sm-2 col-lg-3 control-label">First Name</label>
+        <div class="col-sm-4 col-lg-6">
+            <input type="text" class="form-control" id="FirstnameInput name" name="Firstname" placeholder="First Name"/>
+        </div>
     </div>
 
-    <div>
-        <label for="YearsInput">Years:</label>
-        <input type="text" id="YearsInput" name="Years" />
-
-    </div>
-    <div>
-        <input type="submit" value="Save"/>
-
+    <div class="form-group">
+        <label for="LastnameInput" class="col-sm-2 col-lg-3  control-label">Last Name</label>
+        <div class="col-sm-4 col-lg-6">
+            <input type="text" class="form-control" id="LastnameInput lastname" name="Lastname" placeholder="Last Name" />
+        </div>
     </div>
 
-}
-@section scripts{
-    @Scripts.Render("~/bundles/jqueryval")
-    
+    <div class="form-group">
+        <label for="YearsInput" class="col-sm-2 col-lg-3 control-label">Years</label>
+        <div class="col-sm-3 col-lg-5">
+            <input type="text" class="form-control" id="YearsInput years" name="Years" placeholder="Years" />
+        </div>
+    </div>
+        <div>
+            <input type="submit" class="btn btn-info" value="Save Changes">
+        </div>
+<script>
+    function showthing(e) {
+        document.getElementById("ambula").style.display = "none";
+        document.getElementById("hidden-editform").style.display = "none";
+        if (e.id == "editbutton") {
+            document.getElementById("hidden-editform").style.display = "block";
+            if (document.getElementById("ambularbutton").classList.contains("active"))
+                document.getElementById("ambularbutton").classList.remove("active");
+        }
+        else {
+            document.getElementById("ambula").style.display = "block";
+            document.getElementById("ambularbutton").classList.add("active");
+        }
+            
     }
+</script>
+        }
+<a href="@Url.Action("MyHours", "Users")"><p>My next hours</p></a>
+<a href="@Url.Action("History", "Users")"><p>Hystory of my teeths</p></a>
+
+        @section scripts{
+            @Scripts.Render("~/bundles/jqueryval")
+
+        }

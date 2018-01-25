@@ -2,12 +2,12 @@
 @{
     Layout = null;
 }
+@model IEnumerable<ReserveHourModel>
 @{
     string[] cal_days_labels = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
     string[] cal_months_labels = {"January", "February", "March", "April",
-                     "May", "June", "July", "August", "September",
-                     "October", "November", "December"};
-
+             "May", "June", "July", "August", "September",
+             "October", "November", "December"};
     int[] cal_days_in_month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     var cal_current_date = DateTime.Now;
     int firstDay = (int)new DateTime(cal_current_date.Year, ViewBag.month, 1).DayOfWeek;
@@ -17,19 +17,46 @@
         if ((cal_current_date.Year % 4 == 0 && cal_current_date.Year % 100 != 0) || cal_current_date.Year % 400 == 0)
         {
             monthLength = 29;
+            cal_days_in_month[1] = 29;
         }
+    }
+    int[] hasnew = new int[cal_days_in_month[ViewBag.month - 1] + 1];
+    int[] hours_in_day = new int[cal_days_in_month[ViewBag.month - 1] + 1];
+    if (ViewBag.isOwner)
+    {
+
+        for (var i = 1; i < hours_in_day.Length; i++)
+        {
+            hours_in_day[i] = 0;
+            hasnew[i] = 0;
+            foreach (var hour in Model)
+            {
+                if (i == hour.Hour.Day)
+                {
+                    hasnew[i] = 1;
+                    hours_in_day[i] += 1;
+                    //if (hour.isNew())
+                    //    hasnew[i] = 1;
+                }
+            }
+        }
+        hours_in_day[0] = 1;
+    }
+    else
+    {
+        hours_in_day = new int[1];
+        hasnew = new int[1];
+        hasnew[0] = 0;
+        hours_in_day[0] = -1;
     }
     string monthName = cal_months_labels[ViewBag.month - 1];
     var day = 0;
-    string daystr = "";
-
 }
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>ShowHours</title>
+    <title>Calendar</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/calendar")
@@ -39,12 +66,15 @@
     <div>
         <br />
         <p>@cal_current_date.DayOfWeek</p>
+        <p>@ViewBag.userid</p>
     </div>
     <div class="container">
         Actual calendar
         <table class="table table-bordered">
             <tbody>
-                <tr class="calendar-header">
+                @if (ViewBag.isOwner)
+                {
+                    <tr class="calendar-header">
                     @for (var i = 0; i <= 6; i++)
                     {
                         <th class="calendar-header-day">
@@ -52,7 +82,7 @@
                         </th>
                     }
                 </tr>
-                @for (var i = 0; i < 9; i++)
+                for (var i = 0; i < 9; i++)
                 {
                     if (day >= monthLength)
                     {
@@ -70,10 +100,18 @@
                             if (day == (int)cal_current_date.Day && ViewBag.month == cal_current_date.Month)
                             {
                                 <td class="calendar-day today" id="@day">
-                                    @if (day <= monthLength && (i > 0 || j >= firstDay))
+                                    @if (hasnew[day] > 0)
                                     {
-                                        @Html.ActionLink(day.ToString(), "ShowHours", "Dentist", new {area = "Dentist", m = 6}, new { @class = "nodeco" })
-                                    }
+                                            <a class ="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day<span style="float:right;">@hours_in_day[day]</span><span class="glyphicon glyphicon-star" style="color:green;"></span></a>
+                                        } else
+                                        {
+                                            <a class="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day<span style="float:right;">
+                                                @if (hours_in_day[day] > 0)
+                                                {
+                                                    @hours_in_day[day]
+                                                }
+                                            </span></a>
+                                        }
                                 </td>
 
                             }
@@ -90,7 +128,18 @@
                                 <td class="calendar-day" id="@day">
                                     @if (day <= monthLength && (i > 0 || j >= firstDay))
                                     {
-                                        @Html.ActionLink(day.ToString(), "ShowHours", "Dentist", new {area = "Dentist", m = 6}, new { @class = "nodeco" })
+                                        if (hasnew[day] > 0)
+                                        {
+                                            <a class ="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day<span style="float:right;">@hours_in_day[day]</span><span class="glyphicon glyphicon-star" style="color:green;float:right;"></span></a>
+                                        } else
+                                        {
+                                            <a class="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day<span style="float:right;">
+                                                @if (hours_in_day[day] > 0)
+                                                {
+                                                    @hours_in_day[day]
+                                                }
+                                            </span></a>
+                                        }
                                     }
                                 </td>
                             }
@@ -99,7 +148,63 @@
 
 
                 }
+                } else
+                {
+                        <tr class="calendar-header">
+                    @for (var i = 0; i <= 6; i++)
+                    {
+                        <th class="calendar-header-day">
+                            @cal_days_labels[i]
+                        </th>
+                    }
+                </tr>
+                for (var i = 0; i < 9; i++)
+                {
+                    if (day >= monthLength)
+                    {
+                        break;
+                    }
 
+                    <tr>
+                        @for (var j = 0; j <= 6; j++)
+                        {
+                            if (!(i == 0 && j < firstDay))
+                            {
+                                day++;
+                            };
+
+                            if (day == (int)cal_current_date.Day && ViewBag.month == cal_current_date.Month)
+                            {
+                                <td class="calendar-day today" id="@day">
+                                            <a class ="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day</a>
+                                </td>
+
+                            }
+                            else if (day > monthLength)
+                            {
+                                <td class="calendar-day"></td>
+                            }
+                            else if (day == 0)
+                            {
+                                <td class="calendar-day"></td>
+                            }
+                            else
+                            {
+                                <td class="calendar-day" id="@day">
+                                    @if (day <= monthLength && (i > 0 || j >= firstDay))
+                                    {
+                                         <a class ="nodeco" href=@Url.Action("ShowHours", "Dentist", new { area = "Dentist", month = ViewBag.month, date = day })>@day</a>
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+
+
+                }
+                }
+            </tbody>
+        </table>
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

@@ -7,10 +7,10 @@ using System.Web;
 using System.Web.Mvc;
 using System.Linq;
 using Dentist.Areas.Dentist.Models;
-using System.Web.Helpers;
+using Microsoft.AspNet.Identity;
+using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
-using System.Threading.Tasks;
 
 namespace Dentist.Areas.Dentist.Controllers
 {
@@ -89,17 +89,17 @@ namespace Dentist.Areas.Dentist.Controllers
                     var credential = new NetworkCredential
                     {
                         UserName = "dentistsite123@gmail.com",
-                        Password = "dentist123" 
+                        Password = "dentist123"
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("ReserveHour");
+                  //  return RedirectToAction("ReserveHour");
                 }
             }
-           
+
             return RedirectToAction("AllDentist");
         }
 
@@ -133,25 +133,45 @@ namespace Dentist.Areas.Dentist.Controllers
         [HttpGet]
         public ActionResult ShowHours(int? month, int? date)
         {
+            var username = this.User.Identity.Name;
+            var user = this.dbContext.Users.FirstOrDefault(x => x.UserName == username);
+            var viewmodel = this.dentistService.GetMyHours(user.Id).Select(b => new ReserveHourModel
+            {
+                Hour = b.Hour,
+                DentistName = b.DentistId,
+                UserID = b.PatientId
+            });
+            var userid = User.Identity.GetUserId();
             if (month == null || month < 1 || month > 12)
                 ViewBag.month = (DateTime.Now.Month);
             else
                 ViewBag.month = month;
+            ViewBag.userid = userid;
+            ViewBag.isOwner = (user.Id == userid) ? true : false;
             if (date == null || date < 1 || (date > 29 && month == 2) || date > 31)
                 ViewBag.date = (int)DateTime.Now.Day;
             else
                 ViewBag.date = date;
-            return this.View();
+            return this.View(viewmodel);
         }
         public ActionResult Calendar(int? month)
         {
+            var username = this.User.Identity.Name;
+            var user = this.dbContext.Users.FirstOrDefault(x => x.UserName == username);
+            var viewmodel = this.dentistService.GetMyHours(user.Id).Select(b => new ReserveHourModel
+            {
+                Hour = b.Hour,
+                DentistName = b.DentistId,
+                UserID = b.PatientId
+            });
+            var userid = User.Identity.GetUserId();
             if (month == null || month < 1 || month > 12)
                 ViewBag.month = (DateTime.Now.Month);
             else
                 ViewBag.month = month;
-            return this.View();
+            ViewBag.userid = userid;
+            ViewBag.isOwner = (user.Id == userid) ? true : false;
+            return this.View(viewmodel);
         }
-
     }
-
 }

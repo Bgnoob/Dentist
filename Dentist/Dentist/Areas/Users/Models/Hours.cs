@@ -9,7 +9,6 @@ namespace Dentist.Areas.Users.Models
     {
         public string DentistName { get; set; }
         public string UserID { get; set; }
-      
         public DateTime Hour { get; set; }
     }
 }

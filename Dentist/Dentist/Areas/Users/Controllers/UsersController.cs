@@ -1,12 +1,8 @@
-﻿using Dentist.Data;
+﻿using Dentist.Areas.Users.Models;
+using Dentist.Data;
 using Dentist.DataServices;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Linq;
-using Dentist.Areas.Users.Models;
 
 namespace Dentist.Areas.Users.Controllers
 {
@@ -30,7 +26,7 @@ namespace Dentist.Areas.Users.Controllers
                 .GetInformationAboutUser(this.User.Identity.Name)
                 .Select(u => new EditUserViewModel
                 {
-                    Username=u.UserName,
+                    Username = u.UserName,
                     Firstname = u.FirstName,
                     Lastname = u.LastName,
                     Years = u.Years
@@ -64,8 +60,6 @@ namespace Dentist.Areas.Users.Controllers
             });
 
             return this.View(viewmodel);
-
-
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -74,7 +68,7 @@ namespace Dentist.Areas.Users.Controllers
             if (this.ModelState.IsValid)
             {
                 this.usersService.UpdateUser(this.User.Identity.Name, viewModel.Firstname, viewModel.Lastname, viewModel.Years);
-                    return this.RedirectToAction("Index");
+                return this.RedirectToAction("Index");
             }
             return this.View(viewModel);
         }
