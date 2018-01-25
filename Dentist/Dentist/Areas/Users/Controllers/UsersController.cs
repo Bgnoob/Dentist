@@ -52,6 +52,21 @@ namespace Dentist.Areas.Users.Controllers
 
             return this.View(viewmodel);
         }
+        public ActionResult History()
+        {
+            var username = this.User.Identity.Name;
+            var user = this.dbContext.Users.FirstOrDefault(x => x.UserName == username);
+            var viewmodel = this.usersService.History(user.Id).Select(b => new Hours
+            {
+                Hour = b.Hour,
+                DentistName = b.DentistId,
+                UserID = b.PatientId
+            });
+
+            return this.View(viewmodel);
+
+
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Index(EditUserViewModel viewModel)

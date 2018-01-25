@@ -43,7 +43,13 @@ namespace Dentist.DataServices
         public IEnumerable<Hours> GetMyHours(string id)
         {
 
-            return this.dbContext.Hours.Where(b => b.PatientId == id).ToList();
+            return this.dbContext.Hours.Where(b => b.PatientId == id && DateTime.Compare(DateTime.Now, b.Hour) < 0).ToList();
+
+        }
+
+        public IEnumerable<Hours> History(string id)
+        {
+            return this.dbContext.Hours.Where(b => b.PatientId == id && DateTime.Compare(DateTime.Now,b.Hour)>0).ToList();
 
         }
     }

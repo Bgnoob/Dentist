@@ -13,5 +13,6 @@ namespace Dentist.DataServices
 
         void UpdateUser(string userId, string firstName, string lastName, int years);
         IEnumerable<Hours> GetMyHours(string id);
+        IEnumerable<Hours> History(string id);
     }
 }

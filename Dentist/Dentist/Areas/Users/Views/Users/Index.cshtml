@@ -16,7 +16,8 @@
     </div>
 
 }
-<a href="@Url.Action("MyHours", "Users")"><p>My Reserved Hours</p></a>
+<a href="@Url.Action("MyHours", "Users")"><p>My next hours</p></a>
+<a href="@Url.Action("History", "Users")"><p>Hystory of my teeths</p></a>
 @using (Html.BeginForm("Index", "Users", FormMethod.Post))
 {
     @Html.AntiForgeryToken()

@@ -7,6 +7,10 @@ using System.Web;
 using System.Web.Mvc;
 using System.Linq;
 using Dentist.Areas.Dentist.Models;
+using System.Web.Helpers;
+using System.Net.Mail;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Dentist.Areas.Dentist.Controllers
 {
@@ -60,7 +64,7 @@ namespace Dentist.Areas.Dentist.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult ReserveHour(ReserveHourModel reserveHourModel)
+        public async Task<ActionResult> ReserveHour(ReserveHourModel reserveHourModel)
         {
             var username = this.User.Identity.Name;
 
@@ -69,8 +73,34 @@ namespace Dentist.Areas.Dentist.Controllers
             {
                 this.dentistService.SaveHour(reserveHourModel.Hour, reserveHourModel.DentistName, user.Id);
             }
+            if (ModelState.IsValid)
+            {
 
-            return View();
+                var text = $"You have booked an appointment at: {reserveHourModel.Hour}. Your dentist will be {reserveHourModel.DentistName}.";
+                var message = new MailMessage();
+                message.To.Add(new MailAddress(user.Email));
+                message.From = new MailAddress("dentistsite123@gmail.com");
+                message.Subject = "Dentist";
+                message.Body = text;
+
+
+                using (var smtp = new SmtpClient())
+                {
+                    var credential = new NetworkCredential
+                    {
+                        UserName = "dentistsite123@gmail.com",
+                        Password = "dentist123" 
+                    };
+                    smtp.Credentials = credential;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.EnableSsl = true;
+                    await smtp.SendMailAsync(message);
+                    return RedirectToAction("ReserveHour");
+                }
+            }
+           
+            return RedirectToAction("AllDentist");
         }
 
         [HttpPost]
@@ -121,5 +151,7 @@ namespace Dentist.Areas.Dentist.Controllers
                 ViewBag.month = month;
             return this.View();
         }
+
     }
+
 }
